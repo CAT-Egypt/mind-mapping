@@ -1,0 +1,578 @@
+/******************** [GENERAL] ********************/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    box-sizing: border-box;
+    user-select: text;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+*::selection {
+    background-color: transparent;
+}
+
+*::-moz-selection {
+    background-color: transparent;
+}
+input:placeholder-shown{
+    font-size: 100%
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica,Arial,sans-serif;
+    color: #fafafa;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: #fafafa;
+}
+
+.molecules-container,
+.renal-container,
+.male-container,
+.liver-container,
+.brady-container,
+.misc-container,
+.lipid-container,
+.eye-container,
+.nightmare-container,
+.jnc-container,
+.ascot-container,
+.diabetic-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #030408 url("../media/imgs/Bg1.jpg") bottom no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: none;
+}
+
+.molecules-container .sub-container,
+.renal-container .sub-container,
+.male-container .sub-container,
+.liver-container .sub-container,
+.brady-container .sub-container,
+.misc-container .sub-container,
+.lipid-container .sub-container,
+.eye-container .sub-container,
+.nightmare-container .sub-container,
+.jnc-container .sub-container,
+.ascot-container .sub-container,
+.diabetic-container .sub-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+/******************** [LOGIN PAGE] ********************/
+#login-bg {
+    position: absolute;
+    background: url("../media/imgs/Bg_2.jpg") center no-repeat #030408;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.sign-out{
+    position: absolute;
+    margin: 25px auto;
+    height: 40px;
+    text-align: center;
+    font-size: 100%;
+    z-index: 1;
+    right: 50px
+}
+
+.sign-out i{
+    padding: 9px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.Absolute-Center {
+    margin: auto;
+    position: absolute;
+    top: 13%; left: 0; bottom: 0; right: 0;
+}
+
+.Absolute-Center.is-Responsive {
+    width: 80%; 
+    height: 60%;
+    min-width: 200px;
+    max-width: 400px;
+    padding: 40px;
+}
+
+
+.input-group{
+    height: 40px !important;
+}
+.input-group span, .input-group input{
+    height: 100% !important;
+}
+.fa-home {
+    position: relative;
+    top: 5%;
+    font-size: 2.5em;
+    cursor: pointer;
+    float: right;
+    right: 10%;
+    z-index: 2;
+
+}
+
+.fa-times {
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    font-size: 2.5em;
+    cursor: pointer;
+    color: #b52424;
+    z-index: 999;
+}
+
+/******************** [MAIN CONTAINER] ********************/
+#main-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../media/imgs/main_bg.jpg") center no-repeat #030408;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    left: 0;
+    top: 0
+    
+}
+
+.branding-logos {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.mind-mapping-logo {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    width: 25%
+}
+
+.merck-logo-01 {
+    position: absolute;
+    top: 0;
+    left: 80%;
+    width: 20%;
+}
+
+.merck-logo-02 {
+    position: absolute;
+    bottom: 0;
+    left: 80%;
+    width: 20%;
+}
+
+.concor-logo {
+    position: absolute;
+    bottom: 2%;
+    left: 3%;
+    width: 7%;
+}
+
+#icons-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: grid;
+}
+
+#icons-container .icon-logo {
+    cursor: pointer;
+}
+
+.molecules-icon {
+    margin-top: 45px;
+}
+
+.renal-icon {
+    margin-top: 15px;
+}
+
+.male-icon {
+    margin-top: 0;
+}
+
+.liver-icon {
+    margin-top: 45px;
+}
+
+.brady-icon {
+    margin-top: 0;
+}
+
+.misc-icon {
+    margin-top: -15px;
+}
+
+.lipid-icon {
+    margin-top: 0;
+}
+
+.eye-icon {
+    margin-top: -15px;
+}
+
+.nightmare-icon {
+    margin-top: -45px;
+}
+
+.jnc-icon {
+    margin-top: 15px;
+}
+
+.ascot-claims-icon {
+    margin-top: -15px;
+}
+
+.diabetic-icon {
+    margin-top: -45px;
+}
+
+/******************** [CONTENT CONTAINER] ********************/
+#content-container {
+    position: relative;
+    top: 0; /* Must be in pixels */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    display: none;
+}
+
+.main-ul {
+    position: absolute;
+    font-size: 1.5em;
+    font-weight: bold;
+    top: 22%;
+    left: 5%;
+    z-index: 1;
+    height: 70%;
+    width: 90%;
+    overflow: scroll;
+    padding-left: 30px
+}
+
+.main-ul li {
+    margin: 7px 0;
+    color: #FCA738;
+}
+
+.main-ul li a {
+    color: #FCA738;
+}
+
+.molecules-icon-alt,
+.renal-icon-alt,
+.male-icon-alt,
+.liver-icon-alt,
+.brady-icon-alt,
+.misc-icon-alt,
+.lipid-icon-alt,
+.eye-icon-alt,
+.nightmare-icon-alt,
+.jnc-icon-alt,
+.ascot-claims-icon-alt,
+.diabetic-icon-alt {
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    width: 10%;
+}
+
+/******************** [MOLECULES CONTAINER] ********************/
+
+/******************** [Molecules Sub Containers - General] ********************/
+.molecules-container .first-container,
+.molecules-container .second-container,
+.molecules-container .third-container,
+.molecules-container .fourth-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #030408 url("../media/imgs/Bg1.jpg") bottom no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: none;
+    z-index: 2;
+}
+
+/******************** [Molecules Sub Container #01] ********************/
+.secondary-ul {
+    position: absolute;
+    font-size: 1em;
+    font-weight: bold;
+    top: 10%;
+    height: 65%;
+    width: 90%;
+    left: 5%;
+    padding: 40px;
+    overflow: scroll
+}
+
+.secondary-ul li {
+    margin: 4% 0;
+}
+
+.ref-btn-group {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    font-size: 1.2em;
+    width: 90%;
+    text-align: center
+}
+
+.ref-btn-group li {
+    display: inline;
+}
+
+/******************** [RENAL CONTAINER] ********************/
+
+/******************** [Renal Sub Containers - General] ********************/
+.renal-container .first-container,
+.renal-container .second-container,
+.renal-container .third-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #030408 url("../media/imgs/Bg1.jpg") bottom no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: none;
+    z-index: 2;
+}
+
+
+/******************** [MALE CONTAINER] ********************/
+
+/******************** [Male Sub Containers - General] ********************/
+.male-container .first-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #030408 url("../media/imgs/Bg1.jpg") bottom no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: none;
+    z-index: 2;
+}
+
+/******************** [LIVER CONTAINER] ********************/
+
+/******************** [Liver Sub Containers - General] ********************/
+.liver-container .first-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #030408 url("../media/imgs/Bg1.jpg") bottom no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: none;
+    z-index: 2;
+}
+
+/******************** [BRADY CONTAINER] ********************/
+
+/******************** [Brady Sub Containers - General] ********************/
+.brady-container .first-container,
+.brady-container .second-container,
+.brady-container .third-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #030408 url("../media/imgs/Bg1.jpg") bottom no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: none;
+    z-index: 2;
+}
+
+
+/******************** [MISC CONTAINER] ********************/
+
+/******************** [MISC Sub Containers - General] ********************/
+.misc-container .first-container,
+.misc-container .second-container,
+.misc-container .third-container,
+.misc-container .fourth-container,
+.misc-container .fifth-container,
+.misc-container .sixth-container,
+.misc-container .seventh-container,
+.misc-container .eighth-container,
+.misc-container .ninth-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #030408 url("../media/imgs/Bg1.jpg") bottom no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: none;
+    z-index: 2;
+}
+
+/******************** [LIPID CONTAINER] ********************/
+
+/******************** [LIPID Sub Containers - General] ********************/
+.lipid-container .first-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #030408 url("../media/imgs/Bg1.jpg") bottom no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: none;
+    z-index: 2;
+}
+
+/******************** [EYE CONTAINER] ********************/
+
+/******************** [EYE Sub Containers - General] ********************/
+.eye-container .first-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #030408 url("../media/imgs/Bg1.jpg") bottom no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: none;
+    z-index: 2;
+}
+/******************** [NIGHTMARE CONTAINER] ********************/
+
+/******************** [NIGHTMARE Sub Containers - General] ********************/
+.nightmare-container .first-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #030408 url("../media/imgs/Bg1.jpg") bottom no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: none;
+    z-index: 2;
+}
+
+/******************** [JNC Sub Containers - General] ********************/
+.jnc-container .first-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #030408 url("../media/imgs/Bg1.jpg") bottom no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: none;
+    z-index: 2;
+}
+
+
+/******************** [ASCOT CONTAINER] ********************/
+
+/******************** [ASCOT Sub Containers - General] ********************/
+.ascot-container .first-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #030408 url("../media/imgs/Bg1.jpg") bottom center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: none;
+    z-index: 2;
+}
+
+/******************** [DIABETIC CONTAINER] ********************/
+
+/******************** [Diabetic Sub Containers - General] ********************/
+.diabetic-container .first-container,
+.diabetic-container .second-container,
+.diabetic-container .third-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #030408 url("../media/imgs/Bg1.jpg") bottom center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: none;
+    z-index: 2;
+}
